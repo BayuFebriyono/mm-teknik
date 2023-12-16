@@ -200,28 +200,23 @@
                     </div>
                     <div class="col-lg-8 text-end">
                         <ul class="nav nav-pills d-inline-flex text-center mb-5">
+
                             <li class="nav-item">
-                                <a class="d-flex m-2 py-2 bg-light rounded-pill active" data-bs-toggle="pill"
+                                <a class="d-flex py-2 m-2 bg-light rounded-pill active" data-bs-toggle="pill"
                                     href="#tab-1">
-                                    <span class="text-dark" style="width: 130px;">All Products</span>
+                                    <span class="text-dark" style="width: 130px;">Timbangan</span>
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="d-flex py-2 m-2 bg-light rounded-pill" data-bs-toggle="pill"
+                                <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill"
                                     href="#tab-2">
-                                    <span class="text-dark" style="width: 130px;">Timbangan</span>
+                                    <span class="text-dark" style="width: 130px;">Belt Conveyor</span>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill"
                                     href="#tab-3">
                                     <span class="text-dark" style="width: 130px;">Dinamo Motor</span>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="d-flex m-2 py-2 bg-light rounded-pill" data-bs-toggle="pill"
-                                    href="#tab-4">
-                                    <span class="text-dark" style="width: 130px;">Belt Conveyor</span>
                                 </a>
                             </li>
                         </ul>
@@ -354,35 +349,95 @@
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="rounded position-relative fruite-item">
                                             <div class="fruite-img">
-                                                <img src="img/fruite-item-5.jpg" class="img-fluid w-100 rounded-top"
+                                                <img src="{{ asset('img/product/belt conveyor sersan.jpg') }}" class="img-fluid w-100 rounded-top"
                                                     alt="">
                                             </div>
                                             <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
-                                                style="top: 10px; left: 10px;">Fruits</div>
+                                                style="top: 10px; left: 10px;">Belt Conveyor</div>
                                             <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                <h4>Grapes</h4>
+                                                <h4>Belt Conveyor Sersan</h4>
                                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
                                                     eiusmod te incididunt</p>
                                                 <div class="d-flex justify-content-between flex-lg-wrap">
-                                                    <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
+                                                    <p class="text-dark fs-5 fw-bold mb-0">Rp. 5.719.000</p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="col-md-6 col-lg-4 col-xl-3">
                                         <div class="rounded position-relative fruite-item">
                                             <div class="fruite-img">
-                                                <img src="img/fruite-item-2.jpg" class="img-fluid w-100 rounded-top"
+                                                <img src="{{ asset('img/product/belt hijau.jpg') }}" class="img-fluid w-100 rounded-top"
                                                     alt="">
                                             </div>
                                             <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
-                                                style="top: 10px; left: 10px;">Fruits</div>
+                                                style="top: 10px; left: 10px;">Belt Conveyor</div>
                                             <div class="p-4 border border-secondary border-top-0 rounded-bottom">
-                                                <h4>Raspberries</h4>
+                                                <h4>Belt Conveyor PVC Hijau</h4>
                                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
                                                     eiusmod te incididunt</p>
                                                 <div class="d-flex justify-content-between flex-lg-wrap">
-                                                    <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
+                                                    <p class="text-dark fs-5 fw-bold mb-0">Rp. 2.600</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="{{ asset('img/product/Belt PVC roughtop.jpg') }}" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Belt Conveyor</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Belt PVC roughtop</h4>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
+                                                    eiusmod te incididunt</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">Rp. 2.600</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="{{ asset('img/product/belt habasit canvas.jpg') }}" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Belt Conveyor</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Belt Habasit Canvas</h4>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
+                                                    eiusmod te incididunt</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">Rp. 15.180.000</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 col-lg-4 col-xl-3">
+                                        <div class="rounded position-relative fruite-item">
+                                            <div class="fruite-img">
+                                                <img src="{{ asset('img/product/vanbelt.jpg') }}" class="img-fluid w-100 rounded-top"
+                                                    alt="">
+                                            </div>
+                                            <div class="text-white bg-secondary px-3 py-1 rounded position-absolute"
+                                                style="top: 10px; left: 10px;">Belt Conveyor</div>
+                                            <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                <h4>Belt Habasit Vanbelt</h4>
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
+                                                    eiusmod te incididunt</p>
+                                                <div class="d-flex justify-content-between flex-lg-wrap">
+                                                    <p class="text-dark fs-5 fw-bold mb-0">Rp. 15.180.000</p>
                                                 </div>
                                             </div>
                                         </div>
