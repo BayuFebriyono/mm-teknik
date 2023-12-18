@@ -190,7 +190,8 @@
 </head>
 
 <body>
-    <form autocomplete='off' class='form'>
+    <form autocomplete='off' class='form' method="POST" action="/login">
+        @csrf
         <div class='control'>
             <h1>
                 Sign In
@@ -220,7 +221,7 @@
                 <div class='bg-inner'></div>
             </div>
         </div>
-        <button class='btn block-cube block-cube-hover' type='button'>
+        <button class='btn block-cube block-cube-hover' type='submit'>
             <div class='bg-top'>
                 <div class='bg-inner'></div>
             </div>

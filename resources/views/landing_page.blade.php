@@ -29,6 +29,7 @@
 
     <!-- Template Stylesheet -->
     <link href="{{ asset('home_page/css/style.css') }}" rel="stylesheet">
+    @livewireStyles
 </head>
 
 <body>
@@ -56,7 +57,7 @@
 
                         <a href="index.html" class="nav-item nav-link active">Home</a>
 
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="/login" class="nav-item nav-link" wire:navigate>Login</a>
 
                     </div>
 
@@ -687,13 +688,6 @@
                     <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Your
                             Site Name</a>, All right reserved.</span>
                 </div>
-                <div class="col-md-6 my-auto text-center text-md-end text-white">
-                    <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
-                    <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
-                    <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
-                    Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a
-                        class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
-                </div>
             </div>
         </div>
     </div>
@@ -707,6 +701,7 @@
 
 
     <!-- JavaScript Libraries -->
+    @livewireScripts
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="{{ asset('home_page/lib/easing/easing.min.js') }}"></script>

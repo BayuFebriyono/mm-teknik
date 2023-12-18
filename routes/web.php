@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\LoginController;
+use App\Livewire\LoginController as LivewireLoginController;
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,5 +20,13 @@ Route::get('/', function () {
     return view('landing_page');
 });
 
-Route::get('/tes', fn()=> view('admin.sidebar.main'));
-Route::get('/login', fn() => view('login'));
+Route::get('/tes', function(){
+    User::create([
+        'username' => 'administrator',
+        'password' => bcrypt('admin123')
+    ]);
+});
+Route::get('/login', LivewireLoginController::class);
+Route::post('/login', [LoginController::class, 'login']);
+
+Route::get('/admin', fn() => view('admin.sidebar.main'));
