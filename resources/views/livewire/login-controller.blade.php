@@ -45,12 +45,9 @@
             <div class='text'>
                 Log In
             </div>
+
         </button>
-        <div class='credits'>
-            <a href='https://codepen.io/marko-zub/' target='_blank'>
-                My other codepens
-            </a>
-        </div>
+        <a href="/" wire:navigate style="color: white;">Main Menu</a>
     </form>
 
 

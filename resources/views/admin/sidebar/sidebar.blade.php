@@ -11,7 +11,7 @@
 
             <li class="sidebar-item active">
                 <a class="sidebar-link" href="index.html">
-                    <i class="fa-solid fa-layer-group"></i> <span class="align-middle">Dashboard</span>
+                    <i class="fa-solid fa-layer-group"></i> <span class="align-middle">Kategori</span>
                 </a>
             </li>
 
