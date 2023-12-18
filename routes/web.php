@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('landing_page');
 });
+
+Route::get('/tes', fn()=> view('admin.sidebar.main'));
+Route::get('/login', fn() => view('login'));
