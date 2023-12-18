@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\LoginController;
 use App\Livewire\Admin\CategoryController;
+use App\Livewire\Admin\ProductController;
 use App\Livewire\LoginController as LivewireLoginController;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
@@ -32,4 +33,5 @@ Route::post('/login', [LoginController::class, 'login']);
 
 Route::middleware('auth')->group(function(){
     Route::get('/category', CategoryController::class);
+    Route::get('/product', ProductController::class);
 });

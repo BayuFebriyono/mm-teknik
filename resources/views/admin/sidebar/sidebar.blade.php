@@ -9,15 +9,15 @@
                 Pages
             </li>
 
-            <li class="sidebar-item active">
-                <a class="sidebar-link" href="index.html">
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="/category" wire:navigate>
                     <i class="fa-solid fa-layer-group"></i> <span class="align-middle">Kategori</span>
                 </a>
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="pages-profile.html">
-                    <i class="align-middle" data-feather="user"></i> <span class="align-middle">Profile</span>
+                <a class="sidebar-link" href="/product" wire:navigate>
+                    <i class="fa-solid fa-boxes-stacked"></i> <span class="align-middle">Product</span>
                 </a>
             </li>
 
