@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LoginController;
+use App\Livewire\Admin\CategoryController;
 use App\Livewire\LoginController as LivewireLoginController;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
@@ -29,4 +30,6 @@ Route::get('/tes', function(){
 Route::get('/login', LivewireLoginController::class);
 Route::post('/login', [LoginController::class, 'login']);
 
-Route::get('/admin', fn() => view('admin.sidebar.main'));
+Route::middleware('auth')->group(function(){
+    Route::get('/category', CategoryController::class);
+});

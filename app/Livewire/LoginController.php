@@ -26,7 +26,7 @@ class LoginController extends Component
         ]);
 
         if(Auth::attempt(['username' => $this->username, 'password' => $this->password])){
-            return $this->redirect('/admin', navigate:true);
+            return $this->redirect('/category', navigate:true);
         }else {
             session()->flash('error', 'Alamat Email atau Password Anda salah!.');
             return $this->redirect('/login', navigate:true);
