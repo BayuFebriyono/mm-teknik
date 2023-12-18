@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignUuid('category_id');
             $table->string('product');
             $table->integer('price');
-            $table->text('dekripsi');
+            $table->text('deskripsi');
             $table->string('url_photo');
             $table->timestamps();
         });
