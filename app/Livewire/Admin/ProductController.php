@@ -5,6 +5,7 @@ namespace App\Livewire\Admin;
 use App\Models\Product;
 use Livewire\Component;
 use App\Models\Category;
+use Exception;
 use Livewire\WithFileUploads;
 use Livewire\Attributes\Title;
 use Livewire\Attributes\Layout;
@@ -55,7 +56,6 @@ class ProductController extends Component
     {
         if ($this->urlPhoto) {
             $lokasiGambar = Storage::disk('public_uploads')->put('Foto_Produk', $this->urlPhoto);
-
         }
 
         Product::create([
@@ -85,9 +85,14 @@ class ProductController extends Component
 
     public function update()
     {
+        $product = Product::find($this->productId);
 
         if ($this->urlPhoto) {
             $lokasiGambar = Storage::disk('public_uploads')->put('Foto_Produk', $this->urlPhoto);
+            try {
+                unlink('uploads/' . $product->url_photo);
+            } catch (Exception $e) {
+            }
             $data = [
                 'category_id' => $this->categoryId,
                 'product' => $this->product,
@@ -115,6 +120,4 @@ class ProductController extends Component
     {
         Product::find($id)->delete();
     }
-
-
 }
