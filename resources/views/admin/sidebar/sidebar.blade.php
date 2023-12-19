@@ -28,8 +28,8 @@
             </li>
 
             <li class="sidebar-item">
-                <a class="sidebar-link" href="pages-sign-up.html">
-                    <i class="align-middle" data-feather="user-plus"></i> <span class="align-middle">Review</span>
+                <a class="sidebar-link" href="/comment" wire:navigate>
+                    <i class="fa-solid fa-comment"></i> <span class="align-middle">Review</span>
                 </a>
             </li>
 
