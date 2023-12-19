@@ -2,15 +2,17 @@
 
 namespace App\Livewire\Admin;
 
+use Exception;
 use App\Models\Product;
 use Livewire\Component;
 use App\Models\Category;
-use Exception;
 use Livewire\WithFileUploads;
 use Livewire\Attributes\Title;
 use Livewire\Attributes\Layout;
-use Illuminate\Support\Facades\Auth;
+use Intervention\Image\ImageManager;
 use Illuminate\Support\Facades\Storage;
+use Intervention\Image\Drivers\Gd\Driver;
+
 
 #[Layout('components.layouts.sidebar')]
 #[Title('Product')]
@@ -55,7 +57,13 @@ class ProductController extends Component
     public function store()
     {
         if ($this->urlPhoto) {
-            $lokasiGambar = Storage::disk('public_uploads')->put('Foto_Produk', $this->urlPhoto);
+
+            $manager = new ImageManager(Driver::class);
+            $image = $manager->read($this->urlPhoto);
+            $image->cover(250, 250);
+            $encoded = $image->toJpeg();
+            $filename = time() . '.' . $this->urlPhoto->extension();
+            $encoded->save(public_path('uploads/Foto_Produk/' . $filename));
         }
 
         Product::create([
@@ -63,7 +71,7 @@ class ProductController extends Component
             'product' => $this->product,
             'price' => $this->price,
             'deskripsi' => $this->deskripsi,
-            'url_photo' => $lokasiGambar
+            'url_photo' => 'Foto_produk/' . $filename
         ]);
 
         $this->cancel();
@@ -88,7 +96,12 @@ class ProductController extends Component
         $product = Product::find($this->productId);
 
         if ($this->urlPhoto) {
-            $lokasiGambar = Storage::disk('public_uploads')->put('Foto_Produk', $this->urlPhoto);
+            $manager = new ImageManager(Driver::class);
+            $image = $manager->read($this->urlPhoto);
+            $image->cover(250, 250);
+            $encoded = $image->toJpeg();
+            $filename = time() . '.' . $this->urlPhoto->extension();
+            $encoded->save(public_path('uploads/Foto_Produk/' . $filename));
             try {
                 unlink('uploads/' . $product->url_photo);
             } catch (Exception $e) {
@@ -98,7 +111,7 @@ class ProductController extends Component
                 'product' => $this->product,
                 'price' => $this->price,
                 'deskripsi' => $this->deskripsi,
-                'url_photo' => $lokasiGambar
+                'url_photo' => 'Foto_produk/' . $filename
             ];
         } else {
 
