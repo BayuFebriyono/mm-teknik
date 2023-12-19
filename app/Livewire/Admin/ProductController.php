@@ -55,6 +55,7 @@ class ProductController extends Component
     {
         if ($this->urlPhoto) {
             $lokasiGambar = Storage::disk('public_uploads')->put('Foto_Produk', $this->urlPhoto);
+
         }
 
         Product::create([

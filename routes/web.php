@@ -23,10 +23,7 @@ Route::get('/', function () {
 });
 
 Route::get('/tes', function(){
-    User::create([
-        'username' => 'administrator',
-        'password' => bcrypt('admin123')
-    ]);
+    return public_path();
 });
 Route::get('/login', LivewireLoginController::class);
 Route::post('/login', [LoginController::class, 'login']);
