@@ -33,11 +33,7 @@
                 </a>
             </li>
 
-            <li class="sidebar-item">
-                <a class="sidebar-link" wire:click="logout">
-                    <i class="fa-solid fa-door-open"></i> <span class="align-middle">Logout</span>
-                </a>
-            </li>
+            <livewire:logout />
 
 
 

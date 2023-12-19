@@ -26,7 +26,7 @@ Route::get('/', function () {
 Route::get('/tes', function(){
     return public_path();
 });
-Route::get('/login', LivewireLoginController::class);
+Route::get('/login', LivewireLoginController::class)->name('login');
 Route::post('/login', [LoginController::class, 'login']);
 
 Route::middleware('auth')->group(function(){

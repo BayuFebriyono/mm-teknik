@@ -2,11 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>MM Teknik</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MM Teknik - Tempat Membeli Keperluan Alat Teknik dan Bangunan</title>
+    <meta name="description"
+        content="MM Teknik menyediakan berbagai keperluan alat teknik dan bangunan. Temukan produk berkualitas dengan harga terbaik.">
+    <meta name="keywords" content="MM Teknik, alat teknik, bangunan, peralatan konstruksi, bahan bangunan">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="MM Teknik">
+
+    <!-- Favicon -->
+    <link rel="icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -55,15 +64,15 @@
                 </button>
                 <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
 
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
 
-                        <a href="/login" class="nav-item nav-link" wire:navigate>Login</a>
-
-                    </div>
+                    <a href="/login" class="nav-item nav-link" wire:navigate>Login</a>
 
                 </div>
-            </nav>
+
         </div>
+        </nav>
+    </div>
     </div>
     <!-- Navbar End -->
 
@@ -184,7 +193,8 @@
                         <p class="mb-4 text-dark">The generated Lorem Ipsum is therefore always free from repetition
                             injected humour, or non-characteristic words etc.</p>
                         <a href="#"
-                            class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5">Hubungi Kami</a>
+                            class="banner-btn btn border-2 border-white rounded-pill text-dark py-3 px-5">Hubungi
+                            Kami</a>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -262,7 +272,9 @@
                         <i class="fa fa-quote-right fa-2x text-secondary position-absolute"
                             style="bottom: 30px; right: 0;"></i>
                         <div class="mb-4 pb-4 border-bottom border-secondary">
-                            <p class="mb-0">Secara keseluruhan, saya sangat puas dengan dinamo motor yang saya beli. Dinamo motor ini merupakan solusi praktis untuk kebutuhan listrik, baik untuk rumah tangga maupun industri.
+                            <p class="mb-0">Secara keseluruhan, saya sangat puas dengan dinamo motor yang saya beli.
+                                Dinamo motor ini merupakan solusi praktis untuk kebutuhan listrik, baik untuk rumah
+                                tangga maupun industri.
                             </p>
                         </div>
                         <div class="d-flex align-items-center flex-nowrap">
@@ -289,7 +301,9 @@
                         <i class="fa fa-quote-right fa-2x text-secondary position-absolute"
                             style="bottom: 30px; right: 0;"></i>
                         <div class="mb-4 pb-4 border-bottom border-secondary">
-                            <p class="mb-0">Saya baru saja menggunakan belt conveyor untuk mengangkut barang di pabrik saya. Setelah menggunakannya selama beberapa hari, saya merasa sangat puas dengan produk ini.
+                            <p class="mb-0">Saya baru saja menggunakan belt conveyor untuk mengangkut barang di
+                                pabrik saya. Setelah menggunakannya selama beberapa hari, saya merasa sangat puas dengan
+                                produk ini.
                             </p>
                         </div>
                         <div class="d-flex align-items-center flex-nowrap">

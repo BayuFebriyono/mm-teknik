@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /admin      # Tidak diizinkan diindeks: Contoh halaman admin
+Allow: /            # Izinkan seluruh situs
