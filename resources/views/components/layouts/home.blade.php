@@ -39,6 +39,7 @@
 
     <!-- Template Stylesheet -->
     <link href="{{ asset('home_page/css/style.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ asset('fontawesome/css/all.css') }}">
     {{ $slot }}
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
