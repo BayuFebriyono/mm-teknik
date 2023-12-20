@@ -1,75 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MM Teknik - Tempat Membeli Keperluan Alat Teknik dan Bangunan</title>
-    <meta name="description"
-        content="MM Teknik menyediakan berbagai keperluan alat teknik dan bangunan. Temukan produk berkualitas dengan harga terbaik.">
-    <meta name="keywords" content="MM Teknik, alat teknik, bangunan, peralatan konstruksi, bahan bangunan">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="MM Teknik">
+<div>
+    <div>
+        <!-- Navbar start -->
+        <div class="container-fluid fixed-top">
+            <div class="container px-0">
+                <nav class="navbar navbar-light bg-white navbar-expand-xl">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="text-primary display-6">MM Teknik</h1>
+                    </a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
 
-    <!-- Favicon -->
-    <link rel="icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon">
+                        <a href="index.html" class="nav-item nav-link active">Home</a>
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap"
-        rel="stylesheet">
+                        <a href="/login" class="nav-item nav-link" wire:navigate>Login</a>
 
-    <!-- Icon Font Stylesheet -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+                    </div>
 
-    <!-- Libraries Stylesheet -->
-    <link href="{{ asset('home_page/lib/lightbox/css/lightbox.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('home_page/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
-
-
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="{{ asset('home_page/css/bootstrap.min.css') }}" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="{{ asset('home_page/css/style.css') }}" rel="stylesheet">
-    @livewireStyles
-</head>
-
-<body>
-
-    <!-- Spinner Start -->
-    <div id="spinner"
-        class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
-        <div class="spinner-grow text-primary" role="status"></div>
-    </div>
-    <!-- Spinner End -->
-
-
-    <!-- Navbar start -->
-    <div class="container-fluid fixed-top">
-        <div class="container px-0">
-            <nav class="navbar navbar-light bg-white navbar-expand-xl">
-                <a href="index.html" class="navbar-brand">
-                    <h1 class="text-primary display-6">MM Teknik</h1>
-                </a>
-                <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarCollapse">
-                    <span class="fa fa-bars text-primary"></span>
-                </button>
-                <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
-
-                    <a href="index.html" class="nav-item nav-link active">Home</a>
-
-                    <a href="/login" class="nav-item nav-link" wire:navigate>Login</a>
-
-                </div>
-
+            </div>
+            </nav>
         </div>
-        </nav>
-    </div>
     </div>
     <!-- Navbar End -->
 
@@ -348,19 +301,8 @@
     <!-- Back to Top -->
     <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i
             class="fa fa-arrow-up"></i></a>
+</div>
 
 
-    <!-- JavaScript Libraries -->
-    @livewireScripts
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="{{ asset('home_page/lib/easing/easing.min.js') }}"></script>
-    <script src="{{ asset('home_page/lib/waypoints/waypoints.min.js') }}"></script>
-    <script src="{{ asset('home_page/lib/lightbox/js/lightbox.min.js') }}"></script>
-    <script src="{{ asset('home_page/lib/owlcarousel/owl.carousel.min.js') }}"></script>
 
-    <!-- Template Javascript -->
-    <script src="{{ asset('home_page/js/main.js') }}"></script>
-</body>
 
-</html>

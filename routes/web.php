@@ -4,6 +4,7 @@ use App\Http\Controllers\LoginController;
 use App\Livewire\Admin\CategoryController;
 use App\Livewire\Admin\CommentController;
 use App\Livewire\Admin\ProductController;
+use App\Livewire\Home\HomeComponent;
 use App\Livewire\LoginController as LivewireLoginController;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
@@ -19,9 +20,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('landing_page');
-});
+Route::get('/', HomeComponent::class);
 
 Route::get('/tes', function(){
     return public_path();

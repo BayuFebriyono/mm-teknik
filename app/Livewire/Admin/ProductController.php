@@ -63,7 +63,7 @@ class ProductController extends Component
             $image->cover(250, 250);
             $encoded = $image->toJpeg();
             $filename = time() . '.' . $this->urlPhoto->extension();
-            $encoded->save(public_path('uploads/Foto_Produk/' . $filename));
+            $encoded->save(public_path('uploads/gambar/' . $filename));
         }
 
         Product::create([
@@ -71,7 +71,7 @@ class ProductController extends Component
             'product' => $this->product,
             'price' => $this->price,
             'deskripsi' => $this->deskripsi,
-            'url_photo' => 'Foto_produk/' . $filename
+            'url_photo' => 'gambar/' . $filename
         ]);
 
         $this->cancel();
@@ -101,7 +101,7 @@ class ProductController extends Component
             $image->cover(250, 250);
             $encoded = $image->toJpeg();
             $filename = time() . '.' . $this->urlPhoto->extension();
-            $encoded->save(public_path('uploads/Foto_Produk/' . $filename));
+            $encoded->save(public_path('uploads/gambar/' . $filename));
             try {
                 unlink('uploads/' . $product->url_photo);
             } catch (Exception $e) {
@@ -111,7 +111,7 @@ class ProductController extends Component
                 'product' => $this->product,
                 'price' => $this->price,
                 'deskripsi' => $this->deskripsi,
-                'url_photo' => 'Foto_produk/' . $filename
+                'url_photo' => 'gambar/' . $filename
             ];
         } else {
 

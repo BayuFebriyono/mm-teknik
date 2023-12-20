@@ -5,7 +5,7 @@
                 Sign In
             </h1>
             @if (session('error'))
-            <p style="color: red">Username atau password salah</p>
+                <p style="color: red">Username atau password salah</p>
             @endif
         </div>
         <div class='control block-cube block-input'>
@@ -50,6 +50,6 @@
         <a href="/" wire:navigate style="color: white;">Main Menu</a>
     </form>
 
-
-
 </div>
+
+
