@@ -24,6 +24,7 @@ class ProductController extends Component
     public $isEditData = false;
     public $categoryId = null;
     public $product = '';
+    public $showPrice = [];
     public $price = '';
     public $deskripsi = '';
     public $urlPhoto = null;
@@ -52,6 +53,7 @@ class ProductController extends Component
         $this->urlPhoto = null;
         $this->productId = null;
         $this->isEditData = false;
+        $this->showPrice = [];
     }
 
     public function store()
@@ -70,6 +72,7 @@ class ProductController extends Component
             'category_id' => $this->categoryId,
             'product' => $this->product,
             'price' => $this->price,
+            'show_price' => $this->showPrice[0] ?? false,
             'deskripsi' => $this->deskripsi,
             'url_photo' => 'gambar/' . $filename
         ]);
@@ -89,6 +92,7 @@ class ProductController extends Component
         $this->deskripsi = $data->deskripsi;
         // $this->urlPhoto = $data->url_photo;
         $this->productId = $data->id;
+       if( $data->show_price == 1) array_push($this->showPrice, 1);
     }
 
     public function update()
@@ -110,6 +114,7 @@ class ProductController extends Component
                 'category_id' => $this->categoryId,
                 'product' => $this->product,
                 'price' => $this->price,
+                'show_price' => $this->showPrice[0] ?? false,
                 'deskripsi' => $this->deskripsi,
                 'url_photo' => 'gambar/' . $filename
             ];
@@ -119,6 +124,7 @@ class ProductController extends Component
                 'category_id' => $this->categoryId,
                 'product' => $this->product,
                 'price' => $this->price,
+                'show_price' => $this->showPrice[0] ?? false,
                 'deskripsi' => $this->deskripsi,
 
             ];

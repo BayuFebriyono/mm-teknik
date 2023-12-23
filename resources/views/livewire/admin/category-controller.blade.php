@@ -5,7 +5,7 @@
 
     {{-- Form Tambah --}}
     @if ($isAddData)
-        <div class="card mb-5">
+        <div wire:transition class="card mb-5">
             <div class="card-header">
                 <h5 class="card-title mb-0">Form Tambah Data</h5>
             </div>
@@ -34,7 +34,7 @@
 
      {{-- Form Edit --}}
      @if ($isEditData)
-     <div class="card mb-5">
+     <div wire:transition class="card mb-5">
          <div class="card-header">
              <h5 class="card-title mb-0">Form Edit Data</h5>
          </div>

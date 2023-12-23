@@ -16,6 +16,7 @@ return new class extends Migration
             $table->foreignUuid('category_id');
             $table->string('product');
             $table->integer('price');
+            $table->boolean('show_price')->default(true);
             $table->text('deskripsi');
             $table->string('url_photo');
             $table->timestamps();
