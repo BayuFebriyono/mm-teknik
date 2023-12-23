@@ -5,7 +5,7 @@
         <div class="container-fluid fixed-top">
             <div class="container px-0">
                 <nav class="navbar navbar-light bg-white navbar-expand-xl">
-                    <a href="index.html" class="navbar-brand">
+                    <a href="/" class="navbar-brand">
                         <h1 class="text-primary display-6">MM Teknik</h1>
                     </a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
@@ -14,7 +14,7 @@
                     </button>
                     <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
 
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
+                        <a href="/" class="nav-item nav-link active">Home</a>
 
                         <a href="/login" class="nav-item nav-link" wire:navigate>Login</a>
 
@@ -257,9 +257,9 @@
     </div>
     <div class="container py-5">
         <div class="row g-4 align-items-center">
-            <div class="col-lg-6">
+            <div class="col-12 col-lg-6">
                 <div class="py-4">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1977.958130381241!2d112.43856728847385!3d-7.474499438713928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e780d8f15010c43%3A0x6e3d24151d72594!2sJl.%20Miji%20Baru%20Satu%2C%20Mergelo%2C%20Kota%20Mojokerto%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1703083159448!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe class="w-100 p-5"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1977.958130381241!2d112.43856728847385!3d-7.474499438713928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e780d8f15010c43%3A0x6e3d24151d72594!2sJl.%20Miji%20Baru%20Satu%2C%20Mergelo%2C%20Kota%20Mojokerto%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1703083159448!5m2!1sid!2sid"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
             <div class="col-lg-6">
@@ -278,8 +278,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Your
-                            Site Name</a>, All right reserved.</span>
+                    <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>MM Teknik</a>, All right reserved.</span>
                 </div>
             </div>
         </div>

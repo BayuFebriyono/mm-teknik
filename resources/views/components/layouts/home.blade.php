@@ -16,7 +16,7 @@
 
 <body>
     <!-- Favicon -->
-    <link rel="icon" href="{{ asset('img/favicon.ico') }}" type="image/x-icon">
+    <link rel="Shortcut Icon" type="image/ico" href="{{ asset('img/mmteknik.ico') }}">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
