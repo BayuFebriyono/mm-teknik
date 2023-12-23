@@ -35,7 +35,7 @@
         <div class="container py-5">
             <div class="row g-5 align-items-center">
                 <div class="col-md-12 col-lg-7">
-                    <h4 class="mb-3 text-secondary">100% Bahan Berkualitas</h4>
+                    <h4 class="mb-3 text-secondary">Menerima pengiriman seluruh wilayah indonesia</h4>
                     <h1 class="mb-5 display-3 text-light">Bahan Bangunan & Teknik</h1>
                 </div>
                 <div class="col-md-12 col-lg-5">

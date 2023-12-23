@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('photo')->nullable();
             $table->text('comment');
+            $table->boolean('show')->default(false);
             $table->timestamps();
         });
     }

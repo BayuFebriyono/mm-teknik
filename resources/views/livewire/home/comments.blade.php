@@ -5,9 +5,9 @@
                 <h4 class="text-primary">Apa Kata Mereka?</h4>
                 <h1 class="display-5 mb-5 text-dark">Berikut ulasan dari client kami!</h1>
             </div>
-            @foreach ($comments as $comment)
-                <div class="owl-carousel testimonial-carousel" wire:key="{{ $comment->id }}">
-                    <div class="testimonial-item img-border-radius bg-light rounded p-4">
+            <div class="owl-carousel testimonial-carousel">
+                @foreach ($comments as $comment)
+                    <div wire:key="{{ $comment->id }}" class="testimonial-item img-border-radius bg-light rounded p-4">
                         <div class="position-relative">
                             <i class="fa fa-quote-right fa-2x text-secondary position-absolute"
                                 style="bottom: 30px; right: 0;"></i>
@@ -27,10 +27,9 @@
                             </div>
                         </div>
                     </div>
-
-                </div>
-            @endforeach
-
+                @endforeach
+            </div>
         </div>
+        <livewire:home.add-comment />
     </div>
 </div>
