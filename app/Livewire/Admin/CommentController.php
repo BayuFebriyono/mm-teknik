@@ -107,4 +107,16 @@ class CommentController extends Component
     public function delete($id){
         Comment::find($id)->delete();
     }
+
+    public function showComment($id){
+        Comment::find($id)->update([
+            'show' => true
+        ]);
+    }
+
+    public function hideComment($id){
+        Comment::find($id)->update([
+            'show' => false
+        ]);
+    }
 }

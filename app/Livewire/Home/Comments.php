@@ -16,7 +16,7 @@ class Comments extends Component
     public $comments =[];
 
     public function mount(){
-        $this->comments = Comment::all();
+        $this->comments = Comment::where('show', true)->get();
     }
     public function render()
     {
