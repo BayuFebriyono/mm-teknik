@@ -1,4 +1,3 @@
-
 <div>
     <div>
         <!-- Navbar start -->
@@ -6,7 +5,8 @@
             <div class="container px-0">
                 <nav class="navbar navbar-light bg-white navbar-expand-xl">
                     <a href="/" class="navbar-brand">
-                        <h1 class="text-primary display-6">MM Teknik</h1>
+                        <img src="{{ asset('img/mmteknik.png') }}" alt="Logo" style="height: 50px;">
+
                     </a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarCollapse">
@@ -44,7 +44,7 @@
                             <div class="carousel-item active rounded">
                                 <img src="{{ asset('img/product/WhatsApp Image 2023-12-14 at 18.03.03 (1).jpeg') }}"
                                     class="img-fluid w-100 h-100 bg-secondary rounded" alt="First slide">
-                                <a href="#" class="btn px-4 py-2 text-white rounded">Timbagan</a>
+                                <a href="#" class="btn px-4 py-2 text-white rounded">Timbangan</a>
                             </div>
                             <div class="carousel-item rounded">
                                 <img src="{{ asset('img/product/WhatsApp Image 2023-12-14 at 18.03.10 (2).jpeg') }}"
@@ -119,7 +119,9 @@
                         </div>
                         <div class="featurs-content text-center">
                             <h5>24/7 Support</h5>
-                            <p class="mb-0">Support every time fast</p>
+                            <a href="https://wa.me/6285731192324" class="btn btn-primary text-white"><i
+                                    class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>&nbsp;WhatsApp</a>
+
                         </div>
                     </div>
                 </div>
@@ -182,40 +184,49 @@
 
 
     <!-- Tastimonial Start -->
-    <livewire:home.comments/>
+    <livewire:home.comments />
     <!-- Tastimonial End -->
 
 
-<!-- Identitas Section Start-->
+    <!-- Identitas Section Start-->
 
-<div class="container-fluid banner bg-secondary my-5">
-    <div class="text-center mt-5">
-        <h1 class="display-3 text-white">Hubungi Kami</h1>
-    </div>
-    <div class="container py-5">
-        <div class="row g-4 align-items-center">
-            <div class="col-12 col-lg-6">
-                <div class="py-4">
-                    <iframe class="w-100 p-5"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1977.958130381241!2d112.43856728847385!3d-7.474499438713928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e780d8f15010c43%3A0x6e3d24151d72594!2sJl.%20Miji%20Baru%20Satu%2C%20Mergelo%2C%20Kota%20Mojokerto%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1703083159448!5m2!1sid!2sid"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="container-fluid banner bg-secondary my-5">
+        <div class="text-center mt-5">
+            <h1 class="display-3 text-white">Hubungi Kami</h1>
+        </div>
+        <div class="container py-5">
+            <div class="row g-4 align-items-center">
+                <div class="col-12 col-lg-6">
+                    <div class="py-4">
+                        <iframe class="w-100 p-5"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1977.958130381241!2d112.43856728847385!3d-7.474499438713928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e780d8f15010c43%3A0x6e3d24151d72594!2sJl.%20Miji%20Baru%20Satu%2C%20Mergelo%2C%20Kota%20Mojokerto%2C%20Jawa%20Timur!5e0!3m2!1sid!2sid!4v1703083159448!5m2!1sid!2sid"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
-            </div>
-            <div class="col-lg-6">
-                <p class="fs-3 text-white" style="margin-bottom: 40px;"><i class="fa-solid fa-envelope fa-2xl" style="color: #ffffff;"></i>&nbsp; mmteknik.id@gmail.com</p>
-                <p class="fs-3 text-white" style="margin-bottom: 40px;"><i class="fa-solid fa-location-dot fa-2xl" style="color: #ffffff;"></i>&nbsp; Miji Baru Executive D4 Jl. Tropodo, Miji, Prajurit Kulon, Kota Mojokerto</p>
-                <a href="https://wa.me/6285731192324" class="btn btn-primary text-white"><i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>&nbsp;WhatsApp 1</a>
-                <a href="https://wa.me/6282131184425" class="btn btn-primary text-white"><i class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>&nbsp;WhatsApp 2</a>
+                <div class="col-lg-6">
+                    <p class="fs-3 text-white" style="margin-bottom: 40px;"><i class="fa-solid fa-envelope fa-2xl"
+                            style="color: #ffffff;"></i>&nbsp; mmteknik.id@gmail.com</p>
+                    <p class="fs-3 text-white" style="margin-bottom: 40px;"><i
+                            class="fa-solid fa-location-dot fa-2xl" style="color: #ffffff;"></i>&nbsp; Miji Baru
+                        Executive D4 Jl. Tropodo, Miji, Prajurit Kulon, Kota Mojokerto</p>
+                    <a href="https://wa.me/6285731192324" class="btn btn-primary text-white"><i
+                            class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>&nbsp;WhatsApp 1</a>
+                    <a href="https://wa.me/6282131184425" class="btn btn-primary text-white"><i
+                            class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>&nbsp;WhatsApp 2</a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Identitas Section End -->
+    <!-- Identitas Section End -->
 
     <!-- Copyright Start -->
     <div class="container-fluid copyright bg-dark py-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>MM Teknik</a>, All right reserved.</span>
+                    <span class="text-light"><a href="#"><i class="fas fa-copyright text-light me-2"></i>MM
+                            Teknik</a>, All right reserved.</span>
                 </div>
             </div>
         </div>
@@ -228,7 +239,3 @@
     <a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i
             class="fa fa-arrow-up"></i></a>
 </div>
-
-
-
-
