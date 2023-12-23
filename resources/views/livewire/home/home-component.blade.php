@@ -203,13 +203,6 @@
                             <div class="ms-4 d-block">
                                 <h4 class="text-dark">Ragil Riidho</h4>
                                 <p class="m-0 pb-3">Mahasiswa</p>
-                                <div class="d-flex pe-5">
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star"></i>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -232,13 +225,6 @@
                             <div class="ms-4 d-block">
                                 <h4 class="text-dark">Anonymus</h4>
                                 <p class="m-0 pb-3">~</p>
-                                <div class="d-flex pe-5">
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                    <i class="fas fa-star text-primary"></i>
-                                </div>
                             </div>
                         </div>
                     </div>

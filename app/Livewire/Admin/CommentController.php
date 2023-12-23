@@ -26,4 +26,8 @@ class CommentController extends Component
             'comments' => Comment::all()
         ]);
     }
+
+    public function addData(){
+        $this->isAddData = true;
+    }
 }

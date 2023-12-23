@@ -42,7 +42,7 @@
                                                     <h4>{{ $product->product }}</h4>
                                                     <p>{{ $product->deskripsi }}</p>
                                                     <div class="d-flex justify-content-between flex-lg-wrap">
-                                                        <p class="text-dark fs-5 fw-bold mb-0">Rp. 1.600.000</p>
+                                                        <p class="text-dark fs-5 fw-bold mb-0">{{ formatRupiah($product->price) }}</p>
                                                     </div>
                                                 </div>
                                             </div>
