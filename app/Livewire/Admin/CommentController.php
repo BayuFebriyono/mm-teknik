@@ -11,7 +11,7 @@ use Intervention\Image\Drivers\Gd\Driver;
 use Livewire\WithFileUploads;
 
 #[Layout('components.layouts.sidebar')]
-#[Title('Category')]
+#[Title('Comment')]
 class CommentController extends Component
 {
     use WithFileUploads;
