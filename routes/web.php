@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LoginController;
+use App\Livewire\Admin\ArticleController;
 use App\Livewire\Admin\CategoryController;
 use App\Livewire\Admin\CommentController;
 use App\Livewire\Admin\ProductController;
@@ -32,4 +33,5 @@ Route::middleware('auth')->group(function(){
     Route::get('/category', CategoryController::class);
     Route::get('/product', ProductController::class);
     Route::get('/comment', CommentController::class);
+    Route::get('/article', ArticleController::class);
 });

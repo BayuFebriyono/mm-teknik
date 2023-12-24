@@ -28,6 +28,12 @@
                 </a>
             </li>
 
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="/article" wire:navigate>
+                    <i class="fa-solid fa-newspaper"></i> <span class="align-middle">Article</span>
+                </a>
+            </li>
+
             <livewire:logout />
 
 

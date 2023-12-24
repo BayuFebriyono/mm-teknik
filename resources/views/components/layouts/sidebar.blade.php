@@ -24,6 +24,7 @@
     <link href="{{ asset('sidebar/css/app.css') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('fontawesome/css/all.min.css') }}">
+
     <div class="wrapper">
         @include('admin.sidebar.sidebar')
 
@@ -42,7 +43,9 @@
 
 
     <script src="{{ asset('sidebar/js/app.js') }}"></script>
+
     @livewireScripts
+
 </body>
 
 </html>
