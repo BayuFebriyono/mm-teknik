@@ -182,6 +182,10 @@
     </div>
     <!-- Fact Start -->
 
+    {{-- Article Start --}}
+    <livewire:home.article-component />
+    {{-- Article End --}}
+
 
     <!-- Tastimonial Start -->
     <livewire:home.comments />
