@@ -5,7 +5,8 @@
             <div class="container px-0">
                 <nav class="navbar navbar-light bg-white navbar-expand-xl">
                     <a href="/" class="navbar-brand">
-                        <img src="{{ asset('img/mmteknik.png') }}" alt="Logo" style="height: 50px;">
+                        <img src="{{ asset('img/logo.png') }}" alt="Logo" style="height: 50px;">
+
 
                     </a>
                     <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse"
@@ -16,6 +17,8 @@
 
                         <a href="/" class="nav-item nav-link active">Home</a>
                         <a href="#produk" class="nav-item nav-link active">Produk</a>
+                        <a href="#kontak" class="nav-item nav-link active">Kontak</a>
+                        <a href="#artikel" class="nav-item nav-link active">Artikel</a>
 
 
                         <a href="/login" class="nav-item nav-link" wire:navigate>Login</a>
@@ -36,7 +39,7 @@
             <div class="row g-5 align-items-center">
                 <div class="col-md-12 col-lg-7">
                     <h4 class="mb-3 text-secondary">Menerima pengiriman seluruh wilayah indonesia</h4>
-                    <h1 class="mb-5 display-3 text-light">Bahan Bangunan & Teknik</h1>
+                    <h1 class="mb-5 display-3 text-light">Spesialis Spare Part Industri dan Alat Teknik</h1>
                 </div>
                 <div class="col-md-12 col-lg-5">
                     <div id="carouselId" class="carousel slide position-relative" data-bs-ride="carousel">
@@ -86,7 +89,7 @@
                         </div>
                         <div class="featurs-content text-center">
                             <h5>Pilihan Lengkap</h5>
-                            <p class="mb-0">Kami menyediakan ratusan jenis produk</p>
+                            <p class="mb-0">Kami Menyediakan Ratusan Jenis Produk dan Menerima Sesuai Permintaan</p>
                         </div>
                     </div>
                 </div>
@@ -119,8 +122,13 @@
                         </div>
                         <div class="featurs-content text-center">
                             <h5>24/7 Support</h5>
-                            <a href="https://wa.me/6285731192324" class="btn btn-primary text-white"><i
-                                    class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>&nbsp;WhatsApp</a>
+                            Support every time fast
+
+                                <a href="https://wa.me/6285731192324" class="btn btn-primary text-white my-1"><i
+                                        class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>&nbsp;WhatsApp 1</a>
+                                <a href="https://wa.me/6282131184425" class="btn btn-primary text-white my-1"><i
+                                        class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>&nbsp;WhatsApp 2</a>
+
 
                         </div>
                     </div>
@@ -183,7 +191,9 @@
     <!-- Fact Start -->
 
     {{-- Article Start --}}
-    <livewire:home.article-component />
+    <div id="artikel">
+        <livewire:home.article-component />
+    </div>
     {{-- Article End --}}
 
 
@@ -194,7 +204,7 @@
 
     <!-- Identitas Section Start-->
 
-    <div class="container-fluid banner bg-secondary my-5">
+    <div id="kontak" class="container-fluid banner bg-secondary my-5">
         <div class="text-center mt-5">
             <h1 class="display-3 text-white">Hubungi Kami</h1>
         </div>
