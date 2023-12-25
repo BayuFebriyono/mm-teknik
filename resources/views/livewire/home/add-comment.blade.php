@@ -1,10 +1,16 @@
 <div>
-     <div wire:transition class="d-flex justify-content-center">
+    <div wire:transition class="d-flex justify-content-center">
         <div class="card col-md-6">
             <div class="card-header">
                 <h4>Tambahkan Review</h4>
             </div>
             <div class="card-body">
+                @if (session('success'))
+                    <div wire:transition class="alert alert-info alert-dismissible fade show" role="alert">
+                        <strong>Review anda telah tersimpan</strong> dan akan ditampilkan oleh admin
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                @endif
                 <form wire:submit="storeComment">
                     <div class="my-2">
                         <label for="Name" class="form-label">Nama</label>

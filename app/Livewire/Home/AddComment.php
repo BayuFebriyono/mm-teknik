@@ -35,5 +35,7 @@ class AddComment extends Component
             'comment' => $this->comment,
             'photo' => 'gambar/' . $filename
         ]);
+
+        session()->flash('success', 'Data ditambahkan');
     }
 }
