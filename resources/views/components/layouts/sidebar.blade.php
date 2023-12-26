@@ -20,7 +20,7 @@
 </head>
 
 <body>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="{{ asset('sidebar/css/app.css') }}" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('fontawesome/css/all.min.css') }}">
@@ -35,7 +35,12 @@
                     <i class="hamburger align-self-center"></i>
                 </a>
 
+                <div class="navbar-collapse collapse">
+                    <ul class="navbar-nav navbar-align">
 
+
+                    </ul>
+                </div>
             </nav>
 
             <main class="content">
@@ -51,8 +56,8 @@
 
 
     <script src="{{ asset('sidebar/js/app.js') }}"></script>
-
     @livewireScripts
+
 
 </body>
 

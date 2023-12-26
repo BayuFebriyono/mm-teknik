@@ -6,11 +6,13 @@ use App\Models\Category;
 use Livewire\Component;
 use Livewire\Attributes\Layout;
 use Livewire\Attributes\Title;
+use Livewire\WithPagination;
 
 #[Layout('components.layouts.sidebar')]
 #[Title('Category')]
 class CategoryController extends Component
 {
+    use WithPagination;
 
     public $isAddData = false;
     public $isEditData = false;
@@ -21,7 +23,7 @@ class CategoryController extends Component
     public function render()
     {
         return view('livewire.admin.category-controller', [
-            'categories' => Category::all()
+            'categories' => Category::paginate(5)
         ]);
     }
 

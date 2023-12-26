@@ -9,12 +9,15 @@ use Livewire\Attributes\Layout;
 use Intervention\Image\ImageManager;
 use Intervention\Image\Drivers\Gd\Driver;
 use Livewire\WithFileUploads;
+use Livewire\WithPagination;
 
 #[Layout('components.layouts.sidebar')]
 #[Title('Comment')]
 class CommentController extends Component
 {
-    use WithFileUploads;
+    use WithFileUploads, WithPagination;
+
+    public $search ='';
 
     public $name = '';
     public $photo = null;
@@ -26,7 +29,10 @@ class CommentController extends Component
     public function render()
     {
         return view('livewire.admin.comment-controller', [
-            'comments' => Comment::all()
+            'comments' => Comment::where('name', 'LIKE', "%{$this->search}%")
+                ->orWhere('comment', 'LIKE', "%{$this->search}%")
+                ->latest()
+                ->paginate(5)
         ]);
     }
 

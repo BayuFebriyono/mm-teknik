@@ -152,41 +152,45 @@
             <h5 class="card-title mb-0">Data Produk</h5>
         </div>
         <div class="card-body">
-            <table class="table table-striped table-secondary">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Product</th>
-                        <th scope="col">Kategori</th>
-                        <th scope="col">Harga</th>
-                        <th scope="col">Harga Tampil</th>
-                        <th scope="col">Deskripsi</th>
-                        <th scope="col">Foto</th>
-                        <th scope="col">Aksi</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach ($products as $product)
-                        <tr wire:key="{{ $product->id }}">
-                            <th scope="row">{{ $loop->iteration }}</th>
-                            <td>{{ $product->product }}</td>
-                            <td>{{ $product->category->kategori }}</td>
-                            <td>{{ $product->price }}</td>
-                            <td>{{ $product->show_price ? 'Ya' : 'Tidak' }}</td>
-                            <td>{{ $product->deskripsi }}</td>
-                            <td><img src="{{ asset('uploads/' . $product->url_photo) }}" style="height: 80px;"></td>
-                            <td><span role="button" class="btn btn-warning"
-                                    wire:click="edit('{{ $product->id }}')"><i
-                                        class="fa-solid fa-pen-to-square"></i></span>
-                                <span role="button" class="btn btn-danger"
-                                    wire:click="delete('{{ $product->id }}')"><i
-                                        class="fa-solid fa-trash-can"></i></span>
-                            </td>
+            <input type="text" class="form-control mb-3" placeholder="Cari produk...." wire:model.live="search">
+            <div class="table-responsive">
+                <table class="table table-striped table-secondary">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Product</th>
+                            <th scope="col">Kategori</th>
+                            <th scope="col">Harga</th>
+                            <th scope="col">Harga Tampil</th>
+                            <th scope="col">Deskripsi</th>
+                            <th scope="col">Foto</th>
+                            <th scope="col">Aksi</th>
                         </tr>
-                    @endforeach
+                    </thead>
+                    <tbody>
+                        @foreach ($products as $product)
+                            <tr wire:key="{{ $product->id }}">
+                                <th scope="row">{{ $loop->iteration }}</th>
+                                <td>{{ $product->product }}</td>
+                                <td>{{ $product->category->kategori }}</td>
+                                <td>{{ $product->price }}</td>
+                                <td>{{ $product->show_price ? 'Ya' : 'Tidak' }}</td>
+                                <td>{{ $product->deskripsi }}</td>
+                                <td><img src="{{ asset('uploads/' . $product->url_photo) }}" style="height: 80px;"></td>
+                                <td><span role="button" class="btn btn-warning"
+                                        wire:click="edit('{{ $product->id }}')"><i
+                                            class="fa-solid fa-pen-to-square"></i></span>
+                                    <span role="button" class="btn btn-danger"
+                                        wire:click="delete('{{ $product->id }}')"><i
+                                            class="fa-solid fa-trash-can"></i></span>
+                                </td>
+                            </tr>
+                        @endforeach
 
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
+            {{ $products->links() }}
         </div>
     </div>
 </div>

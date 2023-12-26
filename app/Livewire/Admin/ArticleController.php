@@ -10,12 +10,13 @@ use Livewire\Attributes\Title;
 use Livewire\Attributes\Layout;
 use Intervention\Image\ImageManager;
 use Intervention\Image\Drivers\Gd\Driver;
+use Livewire\WithPagination;
 
 #[Layout('components.layouts.sidebar')]
 #[Title('Article')]
 class ArticleController extends Component
 {
-    use WithFileUploads;
+    use WithFileUploads, WithPagination;
 
     public $title = '';
     public $category = '';
@@ -28,7 +29,7 @@ class ArticleController extends Component
     public function render()
     {
         return view('livewire.admin.article-controller', [
-            'articles' => Article::all()
+            'articles' => Article::paginate(5)
         ]);
     }
 

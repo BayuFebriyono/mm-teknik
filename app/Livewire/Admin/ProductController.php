@@ -12,13 +12,15 @@ use Livewire\Attributes\Layout;
 use Intervention\Image\ImageManager;
 use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Drivers\Gd\Driver;
-
+use Livewire\WithPagination;
 
 #[Layout('components.layouts.sidebar')]
 #[Title('Product')]
 class ProductController extends Component
 {
-    use WithFileUploads;
+    use WithFileUploads, WithPagination;
+
+    public $search ='';
 
     public $isAddData = false;
     public $isEditData = false;
@@ -33,7 +35,8 @@ class ProductController extends Component
     public function render()
     {
         return view('livewire.admin.product-controller', [
-            'products' => Product::with('category')->get(),
+            'products' => Product::where('product', 'LIKE', "%{$this->search}%")
+                ->with('category')->paginate(5),
             'categories' => Category::all()
         ]);
     }

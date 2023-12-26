@@ -118,36 +118,40 @@
             <h5 class="card-title mb-0">...</h5>
         </div>
         <div class="card-body">
-            <table class="table table-striped table-secondary">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Title</th>
-                        <th scope="col">Category</th>
-                        <th scope="col">Photo</th>
-                        <th scope="col">Content</th>
-                        <th scope="col">Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    @foreach ($articles as $article)
-                        <tr wire:key="{{ $article->id }}">
-                            <th scope="row">{{ $loop->iteration }}</th>
-                            <td>{{ $article->title }}</td>
-                            <td>{{ $article->category }}</td>
-                            <td><img src="uploads/{{ $article->photo }}" style="width: 80px;"></td>
-                            <td>{{ $article->content }}</td>
-                            <td><span role="button" class="btn btn-warning" wire:click="edit('{{ $article->id }}')"><i
-                                        class="fa-solid fa-pen-to-square"></i></span>
-                                <span role="button" class="btn btn-danger"
-                                    wire:click="delete('{{ $article->id }}')"><i
-                                        class="fa-solid fa-trash-can"></i></span>
-                            </td>
+            <div class="table-responsive">
+                <table class="table table-striped table-secondary">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Title</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Photo</th>
+                            <th scope="col">Content</th>
+                            <th scope="col">Action</th>
                         </tr>
-                    @endforeach
+                    </thead>
+                    <tbody>
+                        @foreach ($articles as $article)
+                            <tr wire:key="{{ $article->id }}">
+                                <th scope="row">{{ $loop->iteration }}</th>
+                                <td>{{ $article->title }}</td>
+                                <td>{{ $article->category }}</td>
+                                <td><img src="uploads/{{ $article->photo }}" style="width: 80px;"></td>
+                                <td>{{ $article->content }}</td>
+                                <td><span role="button" class="btn btn-warning" wire:click="edit('{{ $article->id }}')"><i
+                                            class="fa-solid fa-pen-to-square"></i></span>
+                                    <span role="button" class="btn btn-danger"
+                                        wire:click="delete('{{ $article->id }}')"><i
+                                            class="fa-solid fa-trash-can"></i></span>
+                                </td>
+                            </tr>
+                        @endforeach
 
-                </tbody>
-            </table>
+                    </tbody>
+                </table>
+            </div>
+
+            {{ $articles->links() }}
         </div>
     </div>
 
