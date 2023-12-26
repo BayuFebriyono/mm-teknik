@@ -38,8 +38,10 @@
         <div class="container py-5">
             <div class="row g-5 align-items-center">
                 <div class="col-md-12 col-lg-7">
-                    <h4 class="mb-3 text-secondary">Menerima pengiriman seluruh wilayah indonesia</h4>
                     <h1 class="mb-5 display-3 text-light">Spesialis Spare Part Industri dan Alat Teknik</h1>
+                    <h4 class="mb-3 text-secondary">Menerima pengiriman seluruh wilayah indonesia</h4>
+                    <h4 class="mb-3 text-secondary">Menerima jasa lapis karet roda esek dan lapis karet pulley drum</h4>
+                    <h4 class="mb-3 text-secondary">Menerima sambung belt conveyor dengan sistem dingin dan panas</h4>
                 </div>
                 <div class="col-md-12 col-lg-5">
                     <div id="carouselId" class="carousel slide position-relative" data-bs-ride="carousel">
@@ -50,7 +52,7 @@
                                 <a href="#" class="btn px-4 py-2 text-white rounded">Timbangan</a>
                             </div>
                             <div class="carousel-item rounded">
-                                <img src="{{ asset('img/product/WhatsApp Image 2023-12-14 at 18.03.10 (2).jpeg') }}"
+                                <img src="{{ asset('img/product/beltconveyot.jpg') }}"
                                     class="img-fluid w-100 h-100 rounded" alt="Second slide">
                                 <a href="#" class="btn px-4 py-2 text-white rounded">Belt Conveyor</a>
                             </div>
@@ -124,10 +126,17 @@
                             <h5>24/7 Support</h5>
                             Support every time fast
 
-                                <a href="https://wa.me/6285731192324" class="btn btn-primary text-white my-1"><i
+                            <div class="my-3 ">
+                                <span>Admin 1 : 0857-3119-2324</span>
+                                <a href="https://wa.me/6285731192324" class="btn btn-primary text-white"><i
                                         class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>&nbsp;WhatsApp 1</a>
-                                <a href="https://wa.me/6282131184425" class="btn btn-primary text-white my-1"><i
+                            </div>
+                            <div class="my-3 ">
+                                <span>
+                                    Admin 2 : ‪0821‑3118‑4425</span>
+                                <a href="https://wa.me/6282131184425" class="btn btn-primary text-white"><i
                                         class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>&nbsp;WhatsApp 2</a>
+                            </div>
 
 
                         </div>
@@ -224,10 +233,17 @@
                     <p class="fs-3 text-white" style="margin-bottom: 40px;"><i
                             class="fa-solid fa-location-dot fa-2xl" style="color: #ffffff;"></i>&nbsp; Miji Baru
                         Executive D4 Jl. Tropodo, Miji, Prajurit Kulon, Kota Mojokerto</p>
-                    <a href="https://wa.me/6285731192324" class="btn btn-primary text-white"><i
-                            class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>&nbsp;WhatsApp 1</a>
-                    <a href="https://wa.me/6282131184425" class="btn btn-primary text-white"><i
-                            class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>&nbsp;WhatsApp 2</a>
+                    <div class="my-3 text-white">
+                        <span>Admin 1 : 0857-3119-2324</span>
+                        <a href="https://wa.me/6285731192324" class="btn btn-primary text-white"><i
+                                class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>&nbsp;WhatsApp 1</a>
+                    </div>
+                    <div class="my-3 text-white">
+                        <span>
+                            Admin 2 : ‪0821‑3118‑4425</span>
+                        <a href="https://wa.me/6282131184425" class="btn btn-primary text-white"><i
+                                class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>&nbsp;WhatsApp 2</a>
+                    </div>
                 </div>
             </div>
         </div>
