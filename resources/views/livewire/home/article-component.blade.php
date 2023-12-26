@@ -13,9 +13,10 @@
                             <div class="py-4">
                                 <a href="#" class="h5">{{ $article->title }}</a>
                                 <p>{{ substr($article->content, 0, 200) }}...</p>
-                             <div>
-                                 <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary">Selengkapnya</a>
-                             </div>
+                                <div>
+                                    <a wire:navigate href="/show-article/{{ $article->id }}"
+                                        class="btn border border-secondary rounded-pill px-3 text-primary">Selengkapnya</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -23,4 +24,5 @@
             </div>
         </div>
     </div>
+
 </div>

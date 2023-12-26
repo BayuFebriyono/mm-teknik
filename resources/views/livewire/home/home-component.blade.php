@@ -5,7 +5,7 @@
             <div class="container px-0">
                 <nav class="navbar navbar-light bg-white navbar-expand-xl">
                     <a href="/" class="navbar-brand">
-                        <img src="{{ asset('img/logo.png') }}" alt="Logo" style="height: 50px;">
+                        <img src="{{ asset('img/logo2.png') }}" alt="Logo" style="height: 50px;">
 
 
                     </a>
