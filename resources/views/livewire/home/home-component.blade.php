@@ -127,8 +127,8 @@
                             Support every time fast
 
                             <div class="my-3 ">
-                                <span>Admin 1 : 0857-3119-2324</span>
-                                <a href="https://wa.me/6285731192324" class="btn btn-primary text-white"><i
+                                <span>Admin 1 : 0823-1140-1742</span>
+                                <a href="https://wa.me/6282311401742" class="btn btn-primary text-white"><i
                                         class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>&nbsp;WhatsApp 1</a>
                             </div>
                             <div class="my-3 ">
@@ -234,15 +234,19 @@
                             class="fa-solid fa-location-dot fa-2xl" style="color: #ffffff;"></i>&nbsp; Miji Baru
                         Executive D4 Jl. Tropodo, Miji, Prajurit Kulon, Kota Mojokerto</p>
                     <div class="my-3 text-white">
-                        <span>Admin 1 : 0857-3119-2324</span>
-                        <a href="https://wa.me/6285731192324" class="btn btn-primary text-white"><i
+                        <span>Admin 1 : 0823-1140-1742</span>
+                        <a href="https://wa.me/6282311401742" class="btn btn-primary text-white"><i
                                 class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>&nbsp;WhatsApp 1</a>
                     </div>
                     <div class="my-3 text-white">
                         <span>
-                            Admin 2 : ‪0821‑3118‑4425</span>
+                            Admin 2 : 0821‑3118‑4425</span>
                         <a href="https://wa.me/6282131184425" class="btn btn-primary text-white"><i
                                 class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>&nbsp;WhatsApp 2</a>
+                    </div>
+                    <div class="my-3 text-white">
+                        <span>
+                            <a class="text-white fw-bold" href="https://www.instagram.com/alateknik.mm?igsh=MWxncDh6dmg5YWR3bA=="><i class="fa-brands fa-instagram"></i> @alatteknik.mm</a></span>
                     </div>
                 </div>
             </div>
