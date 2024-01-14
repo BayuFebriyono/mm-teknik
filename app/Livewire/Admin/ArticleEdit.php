@@ -2,64 +2,36 @@
 
 namespace App\Livewire\Admin;
 
-use App\Models\Article;
 use Exception;
+use App\Models\Article;
 use Livewire\Component;
 use Livewire\WithFileUploads;
-use Livewire\Attributes\Title;
 use Livewire\Attributes\Layout;
 use Intervention\Image\ImageManager;
 use Intervention\Image\Drivers\Gd\Driver;
-use Livewire\WithPagination;
 
 #[Layout('components.layouts.sidebar')]
-#[Title('Article')]
-class ArticleController extends Component
+class ArticleEdit extends Component
 {
-    use WithFileUploads, WithPagination;
-
+    use WithFileUploads;
     public $title = '';
     public $category = '';
     public $photo = null;
     public $content = '';
     public $articleId = null;
-    public $isAddData = false;
-    public $isEditData = false;
+
+    public function mount($id)
+    {
+        $article = Article::find($id);
+        $this->articleId = $article->id;
+        $this->title = $article->title;
+        $this->category = $article->category;
+        $this->content = $article->content;
+    }
 
     public function render()
     {
-        return view('livewire.admin.article-controller', [
-            'articles' => Article::paginate(5)
-        ]);
-    }
-
-    public function addData()
-    {
-        $this->isAddData = true;
-    }
-
-    public function cancel()
-    {
-
-        $this->title = '';
-        $this->category = '';
-        $this->photo = null;
-        $this->content = '';
-        $this->articleId = null;
-        $this->isAddData = false;
-        $this->isEditData = false;
-    }
-
-
-    public function edit($id)
-    {
-        $this->isEditData = true;
-        $data = Article::find($id);
-
-        $this->title = $data->title;
-        $this->category = $data->category;
-        $this->content = $data->content;
-        $this->articleId = $data->id;
+        return view('livewire.admin.article-edit');
     }
 
     public function update()
@@ -96,10 +68,6 @@ class ArticleController extends Component
         }
 
         $article->update($data);
-        $this->cancel();
-    }
-
-    public function delete($id){
-        Article::find($id)->delete();
+        return $this->redirect('/article', navigate:true);
     }
 }

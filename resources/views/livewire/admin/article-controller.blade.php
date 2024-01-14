@@ -1,6 +1,7 @@
 <div>
     <h3 class="mb-2">Data Artikel</h3>
-    <a wire:navigate href="/article-add" class="btn btn-primary mb-4"><i class="fa-solid fa-circle-plus"></i> &nbsp;Tambahkan
+    <a wire:navigate href="/article-add" class="btn btn-primary mb-4"><i class="fa-solid fa-circle-plus"></i>
+        &nbsp;Tambahkan
         Data</a>
 
     {{-- Form Tambah --}}
@@ -8,56 +9,6 @@
 
     {{-- Form Tambah --}}
     @if ($isEditData)
-        <div wire:transition class="card mb-5">
-            <div class="card-header">
-                <h5 class="card-title mb-0">Form Tambah Data</h5>
-            </div>
-            <div class="card-body">
-                <form wire:submit="update">
-                    <div class="row">
-                        <div class="my-3 col-md-6">
-                            <div class="col-12">
-                                <label for="title" class="form-label">Judul</label>
-                            </div>
-                            <div class="col-12">
-                                <input wire:model="title" txype="text" class="form-control" required>
-                            </div>
-                        </div>
-                        <div class="my-3 col-md-6">
-                            <div class="col-12">
-                                <label for="category" class="form-label">Kategori</label>
-                            </div>
-                            <div class="col-12">
-                                <input wire:model="category" txype="text" class="form-control" required>
-                            </div>
-                        </div>
-                        <div class="my-3 col-md-6">
-                            <div class="col-12">
-                                <label for="photo" class="form-label">Foto Artikel</label>
-                            </div>
-                            <div class="col-12">
-                                <input wire:model="photo" type="file" class="form-control">
-                                @error('photo')
-                                    <p class="text-danger">{{ $message }}</p>
-                                @enderror
-                            </div>
-                        </div>
-                        <div class="my-3 col-md-6" wire:ignore>
-                            <div class="col-12">
-                                <label for="content" class="form-label">Konten</label>
-                            </div>
-                            <div class="col-12">
-                                <div class="editor"></div>
-                                <textarea wire:model="content" class="form-control" id="editor"></textarea>
-                            </div>
-                        </div>
-
-                    </div>
-                    <button type="submit" class="btn btn-primary">Simpan</button>
-                    <button wire:click="cancel" type="button" class="btn btn-secondary">Cancel</button>
-                </form>
-            </div>
-        </div>
     @endif
 
 
@@ -86,9 +37,8 @@
                                 <td>{{ $article->category }}</td>
                                 <td><img src="uploads/{{ $article->photo }}" style="width: 80px;"></td>
                                 <td>{!! $article->content !!}</td>
-                                <td><span role="button" class="btn btn-warning"
-                                        wire:click="edit('{{ $article->id }}')"><i
-                                            class="fa-solid fa-pen-to-square"></i></span>
+                                <td><a wire:navigate href="/article-edit/{{ $article->id }}" class="btn btn-warning"><i
+                                            class="fa-solid fa-pen-to-square"></i></a>
                                     <span role="button" class="btn btn-danger"
                                         wire:click="delete('{{ $article->id }}')"><i
                                             class="fa-solid fa-trash-can"></i></span>

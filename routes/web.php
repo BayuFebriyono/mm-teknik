@@ -3,6 +3,7 @@
 use App\Http\Controllers\LoginController;
 use App\Livewire\Admin\ArticleAdd;
 use App\Livewire\Admin\ArticleController;
+use App\Livewire\Admin\ArticleEdit;
 use App\Livewire\Admin\CategoryController;
 use App\Livewire\Admin\CommentController;
 use App\Livewire\Admin\ProductController;
@@ -38,4 +39,5 @@ Route::middleware('auth')->group(function(){
     Route::get('/comment', CommentController::class);
     Route::get('/article', ArticleController::class);
     Route::get('/article-add', ArticleAdd::class);
+    Route::get('/article-edit/{id}', ArticleEdit::class);
 });
