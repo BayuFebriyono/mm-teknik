@@ -52,6 +52,7 @@ class ArticleController extends Component
 
     public function store()
     {
+        dd($this->content);
         $this->validate([
             'photo' => 'required|image'
         ]);

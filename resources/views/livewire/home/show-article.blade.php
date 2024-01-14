@@ -7,7 +7,7 @@
                         <div class="text-center mx-auto" style="max-width: 700px;">
                             <h1 class="text-dark">{{ $article->title }}</h1>
                             <img src="{{ asset('uploads/' . $article->photo) }}" alt="Gambar" class="img-fluid my-5 rounded">
-                            <p class="mb-4" style="text-align: justify;">{{ $article->content }}</p>
+                            <p class="mb-4" style="text-align: justify;">{!! $article->content !!}</p>
                             <a wire:navigate href="/" class="btn btn-info text-white">Back To Main Menu</a>
                         </div>
 
