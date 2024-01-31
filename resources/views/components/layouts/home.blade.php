@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MM Teknik - Tempat Membeli Keperluan Alat Teknik dan Spare Part Industri</title>
+    <title>Momen Teknik - Tempat Membeli Keperluan Alat Teknik dan Spare Part Industri</title>
     <meta name="description"
         content="MM Teknik menyediakan berbagai keperluan alat teknik dan bangunan. Temukan produk berkualitas dengan harga terbaik.">
     <meta name="keywords" content="MM Teknik, alat teknik, bangunan, peralatan konstruksi, bahan bangunan">

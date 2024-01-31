@@ -5,7 +5,7 @@
             <div class="container px-0">
                 <nav class="navbar navbar-light bg-white navbar-expand-xl">
                     <a href="/" class="navbar-brand">
-                        <img src="{{ asset('img/logo2.png') }}" alt="Logo" style="height: 50px;">
+                        <img src="{{ asset('img/logo2.jpg') }}" alt="Logo" style="height: 50px;">
 
 
                     </a>
@@ -127,8 +127,8 @@
                             Support every time fast
 
                             <div class="my-3 ">
-                                <span>Admin 1 : 0823-1140-1742</span>
-                                <a href="https://wa.me/6282311401742" class="btn btn-primary text-white"><i
+                                <span>Admin 1 : 0821-4273-7574</span>
+                                <a href="https://wa.me/6282142737574" class="btn btn-primary text-white"><i
                                         class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>&nbsp;WhatsApp 1</a>
                             </div>
                             <div class="my-3 ">
@@ -229,13 +229,13 @@
                 </div>
                 <div class="col-lg-6">
                     <p class="fs-3 text-white" style="margin-bottom: 40px;"><i class="fa-solid fa-envelope fa-2xl"
-                            style="color: #ffffff;"></i>&nbsp; mmteknik.id@gmail.com</p>
+                            style="color: #ffffff;"></i>&nbsp; momenteknik.id@gmail.com</p>
                     <p class="fs-3 text-white" style="margin-bottom: 40px;"><i
                             class="fa-solid fa-location-dot fa-2xl" style="color: #ffffff;"></i>&nbsp; Miji Baru
                         Executive D4 Jl. Tropodo, Miji, Prajurit Kulon, Kota Mojokerto</p>
                     <div class="my-3 text-white">
-                        <span>Admin 1 : 0823-1140-1742</span>
-                        <a href="https://wa.me/6282311401742" class="btn btn-primary text-white"><i
+                        <span>Admin 1 : 0821-4273-7574</span>
+                        <a href="https://wa.me/6282142737574" class="btn btn-primary text-white"><i
                                 class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>&nbsp;WhatsApp 1</a>
                     </div>
                     <div class="my-3 text-white">
@@ -246,7 +246,8 @@
                     </div>
                     <div class="my-3 text-white">
                         <span>
-                            <a class="text-white fw-bold" href="https://www.instagram.com/alateknik.mm?igsh=MWxncDh6dmg5YWR3bA=="><i class="fa-brands fa-instagram"></i> @alatteknik.mm</a></span>
+                            <a class="text-white fw-bold" href="https://www.instagram.com/momenteknik.id?igsh=MzRlODBiNWFlZA=="><i class="fa-brands fa-instagram"></i> @momenteknik.id</a></span>
+                            <a class="text-white fw-bold d-block mt-2" href="https://www.instagram.com/momenteknik.id?igsh=MzRlODBiNWFlZA=="><i class="fa-brands fa-facebook"></i>&nbsp;Momen Teknik</a></span>
                     </div>
                 </div>
             </div>
