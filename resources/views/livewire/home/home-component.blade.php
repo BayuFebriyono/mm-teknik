@@ -127,8 +127,8 @@
                             Support every time fast
 
                             <div class="my-3 ">
-                                <span>Admin 1 : 0821-4273-7574</span>
-                                <a href="https://wa.me/6282142737574" class="btn btn-primary text-white"><i
+                                <span>Admin 1 : 0858-6106-3878</span>
+                                <a href="https://wa.me/6285861063878" class="btn btn-primary text-white"><i
                                         class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>&nbsp;WhatsApp 1</a>
                             </div>
                             <div class="my-3 ">
@@ -234,8 +234,8 @@
                             class="fa-solid fa-location-dot fa-2xl" style="color: #ffffff;"></i>&nbsp; Miji Baru
                         Executive D4 Jl. Tropodo, Miji, Prajurit Kulon, Kota Mojokerto</p>
                     <div class="my-3 text-white">
-                        <span>Admin 1 : 0821-4273-7574</span>
-                        <a href="https://wa.me/6282142737574" class="btn btn-primary text-white"><i
+                        <span>Admin 1 : 0858-6106-3878</span>
+                        <a href="https://wa.me/6285861063878" class="btn btn-primary text-white"><i
                                 class="fa-brands fa-whatsapp" style="color: #ffffff;"></i>&nbsp;WhatsApp 1</a>
                     </div>
                     <div class="my-3 text-white">
@@ -247,7 +247,7 @@
                     <div class="my-3 text-white">
                         <span>
                             <a class="text-white fw-bold" href="https://www.instagram.com/momenteknik.id?igsh=MzRlODBiNWFlZA=="><i class="fa-brands fa-instagram"></i> @momenteknik.id</a></span>
-                            <a class="text-white fw-bold d-block mt-2" href="https://www.instagram.com/momenteknik.id?igsh=MzRlODBiNWFlZA=="><i class="fa-brands fa-facebook"></i>&nbsp;Momen Teknik</a></span>
+                            <a class="text-white fw-bold d-block mt-2" href="https://www.facebook.com/profile.php?id=61555696793494&mibextid=zOiqff"><i class="fa-brands fa-facebook"></i>&nbsp;Momen Teknik</a></span>
                     </div>
                 </div>
             </div>
